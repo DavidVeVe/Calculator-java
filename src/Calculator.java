@@ -10,7 +10,7 @@ public class Calculator {
         double num1 = scanner.nextDouble();
 
         System.out.print("Ingrese el segundo numero: ");
-        double numb2 = scanner.nextDouble();
+        double num2 = scanner.nextDouble();
 
         System.out.print("Elija una operación (+, -, *, /): ");
         String operator = scanner.next();
@@ -33,31 +33,31 @@ public class Calculator {
                 throw new IllegalArgumentException("Operador no valido.");
         }
 
-        System.out.println("El resultado es: ", + result);
+        System.out.println("El resultado es: " + result);
 
     }
 
     public double add(double a, double b) {
-        return a + b
+        return a + b;
     }
 
     public double substract(double a, double b) {
-        return a - b
+        return a - b;
     }
 
     public double multiply(double a, double b) {
-        return a * b
+        return a * b;
     }
 
     public double divide(double a, double b) {
         if(b != 0 ) {
-            return a / b
+            return a / b;
         } else {
-            throw new ArithmeticException("Division por cero no valida.")
+            throw new ArithmeticException("Division por cero no valida.");
         }
     }
 
-    public static void main(string[] args) {
+    public static void main(String[] args) {
        Calculator calculator = new Calculator();
        calculator.start();
     }
